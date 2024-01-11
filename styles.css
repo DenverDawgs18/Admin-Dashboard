@@ -10,14 +10,16 @@
 
 }
 .header{
-    background-color: green;
+    background-color: white;
     grid-row: 1/2;
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 70px 1fr 150px 70px 170px;
+    align-items: center;
 }
 .main{
-    background-color: red;
+    background-color: gray;
 }
 .sidebar{
     background-color: lightblue;
@@ -25,9 +27,116 @@
     grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 200px 500px 200px;
 }
-ul{
+.dash{
+    display: grid;
+    grid-row: 1/2;
+    grid-template-columns: 50px 1fr;
+}
+.home{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+.house{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.settings{
+    display: grid;
+    grid-row: 3/4;
+    grid-template-columns: 50px 1fr;
+}
+
+.magnify{
+    height: 30px;
+    width: 30px;
+    grid-row: 1/2;
+    padding-left: 15px;
+}
+.round {
+    width: inherit;
+    height: 2vh;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 0;
+    grid-row: 1/2;
+    background-color: #cbd5e1;
+}
+#bell{
+    justify-self: end;
+}
+.big{
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+}
+.buttons{
+    grid-column: 3/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.nus{
+    background-color: lightblue;
+    color: white;
+    border-style: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.mor{
+    padding-left: 15px;
+}
+.card{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 50px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30px 400px 1fr 30px 300px;
+    gap: 20px;
     padding: 20px;
-    list-style: none;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    grid-column: 1/2;
+    grid-row: 2/6;
+}
+.icons{
+    align-self: end;
+    justify-self: end;
+}
+.announcementsheader{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.announcements{
+    background-color: white;
+    display: grid;
+    grid-row: 2/3;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.trending{
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row: 5/6;
+    padding: 30px;
+}
+.trend{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.trends{
+    justify-self: flex-end;
+    padding-right: 20px;
+}
+.trendingheader{
+    grid-row: 4/5;
 }
